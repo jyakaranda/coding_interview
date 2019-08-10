@@ -19,15 +19,14 @@
 # 5
 # )
 
-# add_executable(test6
-# ${CMAKE_CURRENT_LIST_DIR}/src/test_6.cpp
-# )
+add_executable(test6
+${CMAKE_CURRENT_LIST_DIR}/src/test_6.cpp
+)
 
-# target_link_libraries(test6
-# ${GTEST_BOTH_LIBRARIES}
-# ${CMAKE_THREAD_LIBS_INIT}
-# 6
-# )
+target_link_libraries(test6
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
 
 # add_executable(test7
 # ${CMAKE_CURRENT_LIST_DIR}/src/test_7.cpp
@@ -139,15 +138,60 @@ ${GTEST_BOTH_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
 )
 
+add_executable(test19
+${CMAKE_CURRENT_LIST_DIR}/src/test_19.cpp
+)
+
+target_link_libraries(test19
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test20
+${CMAKE_CURRENT_LIST_DIR}/src/test_20.cpp
+)
+
+target_link_libraries(test20
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test21
+${CMAKE_CURRENT_LIST_DIR}/src/test_21.cpp
+)
+
+target_link_libraries(test21
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test22
+${CMAKE_CURRENT_LIST_DIR}/src/test_22.cpp
+)
+
+target_link_libraries(test22
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test23
+${CMAKE_CURRENT_LIST_DIR}/src/test_23.cpp
+)
+
+target_link_libraries(test23
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
 # add_test(test4
 # ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test4
 # )
 # add_test(test5
 # ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test5
 # )
-# add_test(test6
-# ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test6
-# )
+add_test(test6
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test6
+)
 # add_test(test7
 # ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test7
 # )
@@ -183,4 +227,19 @@ ${CMAKE_THREAD_LIBS_INIT}
 # )
 add_test(test18
 ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test18
+)
+add_test(test19
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test19
+)
+add_test(test20
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test20
+)
+add_test(test21
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test21
+)
+add_test(test22
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test22
+)
+add_test(test23
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test23
 )
