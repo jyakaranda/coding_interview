@@ -33,14 +33,15 @@ static ComplexListNode *clone(ComplexListNode *head)
   ComplexListNode *cur = head;
   ComplexListNode *copy_head = new ComplexListNode(cur->m_nValue);
   ComplexListNode *cur_copy = copy_head;
+  map[cur] = cur_copy;
   cur = cur->m_pNext;
   while (nullptr != cur)
   {
     ComplexListNode *node = new ComplexListNode(cur->m_nValue);
     cur_copy->m_pNext = node;
-    map[cur] = node;
-    cur = cur->m_pNext;
     cur_copy = cur_copy->m_pNext;
+    map[cur] = cur_copy;
+    cur = cur->m_pNext;
   }
   cur = head;
   cur_copy = copy_head;

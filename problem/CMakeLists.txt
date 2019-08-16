@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(problem CXX)
 
 add_compile_options(-std=c++11)
+SET(CMAKE_BUILD_TYPE "Debug")  
+# SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+# SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
 # place binaries and libraries according to GNU standards
 include(GNUInstallDirs)
