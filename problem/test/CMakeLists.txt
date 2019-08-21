@@ -228,6 +228,42 @@ ${GTEST_BOTH_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
 )
 
+add_executable(test29
+${CMAKE_CURRENT_LIST_DIR}/src/test_29.cpp
+)
+
+target_link_libraries(test29
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test30
+${CMAKE_CURRENT_LIST_DIR}/src/test_30.cpp
+)
+
+target_link_libraries(test30
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test31
+${CMAKE_CURRENT_LIST_DIR}/src/test_31.cpp
+)
+
+target_link_libraries(test31
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test32
+${CMAKE_CURRENT_LIST_DIR}/src/test_32.cpp
+)
+
+target_link_libraries(test32
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
 # add_test(test4
 # ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test4
 # )
@@ -302,4 +338,16 @@ ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test27
 )
 add_test(test28
 ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test28
+)
+add_test(test29
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test29
+)
+add_test(test30
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test30
+)
+add_test(test31
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test31
+)
+add_test(test32
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test32
 )
