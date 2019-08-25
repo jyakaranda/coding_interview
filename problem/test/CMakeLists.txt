@@ -354,6 +354,33 @@ ${GTEST_BOTH_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
 )
 
+add_executable(test43
+${CMAKE_CURRENT_LIST_DIR}/src/test_43.cpp
+)
+
+target_link_libraries(test43
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test44
+${CMAKE_CURRENT_LIST_DIR}/src/test_44.cpp
+)
+
+target_link_libraries(test44
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
+add_executable(test45
+${CMAKE_CURRENT_LIST_DIR}/src/test_45.cpp
+)
+
+target_link_libraries(test45
+${GTEST_BOTH_LIBRARIES}
+${CMAKE_THREAD_LIBS_INIT}
+)
+
 # add_test(test4
 # ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test4
 # )
@@ -470,4 +497,13 @@ ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test41
 )
 add_test(test42
 ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test42
+)
+add_test(test43
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test43
+)
+add_test(test44
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test44
+)
+add_test(test45
+${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/test45
 )
